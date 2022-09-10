@@ -1,10 +1,13 @@
 [package]
 name = "mysql-plugin-api"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Felix Bytow <drako@drako.guru>"]
 description = "Helper library for implementing MySQL plugins in Rust"
 license = "BSD-2-Clause OR GPL-3.0-or-later"
+repository = "https://github.com/Drako/mysql-plugin-api.git"
+documentation = "https://docs.rs/crate/mysql-plugin-api"
+readme = "README.md"
 
 [lib]
 doctest = true
