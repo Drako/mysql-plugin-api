@@ -1,0 +1,15 @@
+[package]
+name = "mysql-plugin-api"
+version = "0.1.0"
+edition = "2021"
+authors = ["Felix Bytow <drako@drako.guru>"]
+description = "Helper library for implementing MySQL plugins in Rust"
+license = "BSD-2-Clause OR GPL-3.0-or-later"
+
+[lib]
+doctest = true
+
+[workspace]
+members = [
+    "examples/example-storage-plugin"
+]

@@ -1,0 +1,11 @@
+[package]
+name = "example-storage-plugin"
+version = "0.1.0"
+edition = "2021"
+description = "Example storage engine plugin"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+mysql-plugin-api = { path = "../.." }
