@@ -18,7 +18,6 @@ pub mod types;
 /// # use mysql_plugin_api::mysql_declare_plugin;
 /// # use mysql_plugin_api::types::{Plugin, StorageEngineInfo, PluginType, License};
 /// # use std::ffi::c_void;
-///
 /// pub const EXAMPLE_STORAGE_ENGINE: StorageEngineInfo = StorageEngineInfo {
 ///     interface_version: MYSQL_HANDLERTON_INTERFACE_VERSION,
 /// };
@@ -31,6 +30,7 @@ pub mod types;
 ///         author: b"Felix Bytow\0" as *const u8,
 ///         descr: b"Example storage engine in Rust\0" as *const u8,
 ///         license: License::Bsd,
+///         ..Plugin::zero()
 ///     },
 /// ];
 /// ```
